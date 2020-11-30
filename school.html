@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Харьков</title>
+	<link rel="stylesheet" href="css/school.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header" id="top">
+			<div class="header__content">
+				<div class="header__menu">
+					<ul class="header__list header__list-1">
+						<li class="header__item">Новости</li>
+						<li class="header__item">Афиша</li>
+						<li class="header__item">Справочник</li>
+					</ul>
+				</div>
+				<div class="header__logo">
+					#ВХАРЬКОВЕ
+				</div>
+				<div class="header__menu-2">
+					<ul class="header__list header__list-2">
+						<li class="header__item">Достопримечательности</li>
+						<li class="header__item">Сотрудничество</li>
+						<li class="header__item">О нас</li>
+					</ul>
+				</div>
+				<div class="header__burger">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__button" id="main__button">
+				<a href="#footer"><img src="img/down.png" alt=""></a>
+			</div>
+			<div class="main__button-2" id="main__button-2">
+				<a href="#top"><img src="img/top.png" alt=""></a>
+			</div>
+			<div class="main__gallery">
+				<div class="main__item">
+					<div class="main__image">
+						<div class="main__img">
+							<img src="img/fontain.jpg" alt="">
+						</div>
+					</div>
+					<div class="main__text">«Зеркальная струя» ― главный символ Харькова. Это оригинальный фонтан и одноименный сквер, которые расположены почти в самом центре города. Фонтан поставили как памятник в честь Дня победы. Через дорогу от «Струи» расположен Харьковский театр оперы и балета, который примечателен прежде всего цепью красивых фонтанов, ну и монументальной советской архитектурой</div>
+				</div>
+				<div class="main__item-2">
+					<div class="main__text">
+						Ну и самая романтичная достопримечательность Харькова ― Памятник влюбленным. Совсем невесомый и легкий памятник находится в окружении фонтана и представляет собой 2 тоненькие детские фигурки, которые слились в первом поцелуе. Место очень полюбилось харьковской молодежи и здесь часто назначают свидания.
+					</div>
+					<div class="main__image">
+						<div class="main__img main__img-2">
+							<img src="img/love.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="main__item">
+					<div class="main__image">
+						<div class="main__img">
+							<img src="img/shevchenko.jpg" alt="">
+						</div>
+					</div>
+					<div class="main__text">Ну и куда без харьковских парков, как отдельных видов достопримечательностей. В парке Шевченко вы найдете один из самых красивых и монументальных памятников Кобзарю, а еще огромный фонтан «Каскад» с красивейшими смотровыми площадками. В парке Горького самое большое количество аттракционов, а еще уникальная канатная дорога посреди города, которую ну точно надо попробовать всем побывавшим в Харькове. </div>
+				</div>
+				<div class="main__item-2">
+					<div class="main__text">
+						Александровская колокольня ― шикарный вид на центр Харькова. Колокольня до сих пор остается одним из самых высоких зданий города. Подъем займет около 15-20 минут.
+					</div>
+					<div class="main__image">
+						<div class="main__img main__img-2">
+							<img src="img/church.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="main__item">
+					<div class="main__image">
+						<div class="main__img">
+							<img src="img/wheel.jpg" alt="">
+						</div>
+					</div>
+					<div class="main__text">Колесо обозрения в парке Горького поднимет вас над городом на 55 метров. Отсюда вы рассмотрите зеленые зоны города, центр и спальные районы. Ну и все помним, что это Харьков, а значит и колесо обозрения тут самое высокое в Украине.</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer" id="footer">
+			<div class="footer__content">
+				<div class="footer__text">
+					<p>2020, Все права защищены</p>
+				</div>
+				<div class="footer__author">
+					<p>Shadöw and Jeën ™ :ﾉ</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#main__button, #main__button-2").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1300);
+			});
+	});
+	</script>
+</body>
+</html>
